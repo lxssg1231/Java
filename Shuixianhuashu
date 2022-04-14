@@ -1,0 +1,13 @@
+public class ForTest1 {
+    public static void main(String[] args) {
+        int g = 0, s = 0, b = 0, sum = 0;
+        for (int i = 100; i < 1000; i++) {
+            g = i % 10;
+            s = i / 10 % 10;
+            b = i / 100;
+            sum = (int) (Math.pow(g, 3) + Math.pow(s, 3) + Math.pow(b, 3));
+            if (sum == i)
+                System.out.println(i);
+        }
+    }
+}
